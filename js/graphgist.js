@@ -218,7 +218,7 @@ function GraphGist($) {
         }
 
         $footer.prepend('<i class="icon-check"></i><a target="_blank" title="Submit an original GraphGist and get a Neo4j t-shirt" href="' + formUrl(window.location.href, document.title, author, twitter) + '"> Submit</a> ');
-        $footer.prepend('<i class="icon-cogs"></i> Uses Neo4j Version <a target="_blank" href="http://docs.neo4j.org/chunked/' + version + '/cypher-query-lang.html">' + version + '</a> ');
+        $footer.prepend('<i class="icon-cogs"></i> Using Neo4j Version <a target="_blank" href="http://docs.neo4j.org/chunked/' + version + '/cypher-query-lang.html">' + version + '</a> ');
         $('h2[id]').css({cursor: 'pointer'}).click(function () {
             window.location.href = window.location.href.replace(/($|#.+?$)/, '#' + $(this).attr('id'))
         });
